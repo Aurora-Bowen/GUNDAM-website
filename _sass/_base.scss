@@ -26,7 +26,9 @@ body {
 
 
 .site-container {
-  width: min(100% - 48px, $page-width);
+  width: calc(100% - 48px);
+
+  max-width: $page-width;
 
   margin-inline: auto;
 }

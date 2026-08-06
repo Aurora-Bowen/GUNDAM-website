@@ -1,1 +1,61 @@
 
+<header class="site-header">
+
+  <div class="site-container navigation-container">
+
+    <a
+      class="site-logo"
+      href="{{ '/' | relative_url }}"
+    >
+      GUNDAM
+    </a>
+
+
+    <button
+      class="menu-button"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+    >
+      Menu
+    </button>
+
+
+    <nav
+      id="main-navigation"
+      class="site-navigation"
+      aria-label="Main navigation"
+    >
+
+      {% for item in site.data.navigation.main %}
+
+        {% if item.external %}
+
+          <a
+            class="navigation-link external-link"
+            href="{{ item.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ item.title }} ↗
+          </a>
+
+        {% else %}
+
+          <a
+            class="navigation-link"
+            href="{{ item.url | relative_url }}"
+          >
+            {{ item.title }}
+          </a>
+
+        {% endif %}
+
+      {% endfor %}
+
+    </nav>
+
+  </div>
+
+</header>

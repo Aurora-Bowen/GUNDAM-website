@@ -1,0 +1,25 @@
+main:
+  - title: Home
+    url: /
+
+  - title: How to Install
+    url: /install/
+
+  - title: Tutorials
+    url: /tutorials/
+
+  - title: Documentation
+    url: /documentation/
+
+  - title: Collaboration
+    url: /collaboration/
+
+  - title: Contact Us
+    url: /contact/
+
+  - title: Releases
+    url: /releases/
+
+  - title: GUNDAM
+    url: https://github.com/gundam-organization/gundam
+    external: true

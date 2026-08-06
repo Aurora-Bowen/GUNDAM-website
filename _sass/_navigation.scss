@@ -1,1 +1,134 @@
+.site-header {
+  position: sticky;
 
+  top: 0;
+
+  z-index: 100;
+
+  border-bottom: 1px solid $border-color;
+
+  background: rgba(255, 255, 255, 0.97);
+}
+
+
+.navigation-container {
+  min-height: $header-height;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 32px;
+}
+
+
+.site-logo {
+  flex-shrink: 0;
+
+  color: $text-color;
+
+  font-size: 1.4rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.02em;
+}
+
+
+.site-logo:hover {
+  color: $text-color;
+
+  text-decoration: none;
+}
+
+
+.site-navigation {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 24px;
+}
+
+
+.navigation-link {
+  color: $secondary-text-color;
+
+  font-size: 0.95rem;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+
+.navigation-link:hover {
+  color: $primary-color;
+
+  text-decoration: none;
+}
+
+
+.external-link {
+  color: $primary-color;
+}
+
+
+.menu-button {
+  display: none;
+
+  padding: 8px 14px;
+
+  border: 1px solid $border-color;
+
+  border-radius: 6px;
+
+  background: $background-color;
+
+  color: $text-color;
+
+  font: inherit;
+
+  cursor: pointer;
+}
+
+
+
+.site-footer {
+  border-top: 1px solid $border-color;
+
+  background: $light-background-color;
+}
+
+
+.footer-container {
+  min-height: 120px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+
+.footer-text {
+  margin: 4px 0 0;
+
+  color: $secondary-text-color;
+
+  font-size: 0.9rem;
+}
+
+
+.footer-links {
+  display: flex;
+
+  gap: 22px;
+}

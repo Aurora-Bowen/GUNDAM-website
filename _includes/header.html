@@ -1,4 +1,3 @@
-
 <header class="site-header">
 
   <div class="site-container navigation-container">
@@ -10,7 +9,6 @@
       GUNDAM
     </a>
 
-
     <button
       class="menu-button"
       type="button"
@@ -21,7 +19,6 @@
       Menu
     </button>
 
-
     <nav
       id="main-navigation"
       class="site-navigation"
@@ -30,10 +27,18 @@
 
       {% for item in site.data.navigation.main %}
 
+        {% assign link_classes = "navigation-link" %}
+
+        {% unless item.external %}
+          {% if page.url == item.url %}
+            {% assign link_classes = link_classes | append: " active" %}
+          {% endif %}
+        {% endunless %}
+
         {% if item.external %}
 
           <a
-            class="navigation-link external-link"
+            class="{{ link_classes }} external-link"
             href="{{ item.url }}"
             target="_blank"
             rel="noopener noreferrer"
@@ -44,7 +49,7 @@
         {% else %}
 
           <a
-            class="navigation-link"
+            class="{{ link_classes }}"
             href="{{ item.url | relative_url }}"
           >
             {{ item.title }}

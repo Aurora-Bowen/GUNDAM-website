@@ -1,8 +1,11 @@
 # GUNDAM Website
 
+🌐 **Website:** [https://aurora-bowen.github.io/GUNDAM-website/](https://aurora-bowen.github.io/GUNDAM-website/)
+
+📦 **GUNDAM Source Repository:** [gundam-organization/gundam](https://github.com/gundam-organization/gundam)
+
 This repository contains the source files for the new GUNDAM website
 and user documentation.
-
 
 ## Current development phase
 

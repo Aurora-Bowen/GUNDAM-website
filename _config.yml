@@ -1,1 +1,17 @@
+title: GUNDAM
+description: Website and user documentation for the GUNDAM framework.
+lang: en-US
 
+url: "https://aurora-bowen.github.io"
+baseurl: "/GUNDAM-website"
+
+markdown: kramdown
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

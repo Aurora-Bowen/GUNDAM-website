@@ -7,25 +7,30 @@ $font-family:
   Arial,
   sans-serif;
 
-
 $page-width: 1180px;
 
+$text-color: #1f2230;
+$secondary-text-color: #62697b;
 
-$text-color: #202124;
+$background-color: #f7f5fc;
+$light-background-color: #f1eef9;
 
-$secondary-text-color: #5f6368;
+$primary-color: #2e78d2;
+$primary-hover-color: #1f5fae;
 
-$background-color: #ffffff;
+$border-color: #ddd8ea;
 
-$light-background-color: #f8f9fa;
-
-
-$primary-color: #1769aa;
-
-$primary-hover-color: #0f4f87;
-
-
-$border-color: #dadce0;
+$header-height: 88px;
 
 
-$header-height: 72px;
+/* new theme colors */
+$header-start: #7057b7;
+$header-mid: #5f4aa8;
+$header-end: #483987;
+
+$header-text-color: #ffffff;
+$header-muted-color: rgba(255, 255, 255, 0.88);
+
+$active-line-color: #96c7ff;
+
+$footer-background: #efebf8;
